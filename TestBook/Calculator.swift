@@ -18,7 +18,7 @@ class Calculator {
         return x - y
     }
     
-    func nultiple(_ x: Int, _ y: Int) -> Int {
+    func multiple(_ x: Int, _ y: Int) -> Int {
         return x * y
     }
     
