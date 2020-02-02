@@ -10,7 +10,6 @@ import Foundation
 
 class Calculator {
     
-    
     func add(_ x: Int, _ y: Int) -> Int {
         return x + y
     }
