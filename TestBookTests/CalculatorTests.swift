@@ -11,35 +11,36 @@ import XCTest
 
 class CalculatorTests: XCTestCase {
     
+    var calculator: Calculator!
+    
+    override func setUp() {
+        super.setUp()
+        
+        self.calculator = Calculator()
+    }
+    
+    override func tearDown() {
+        super.tearDown()
+        
+    }
+    
     func testAdd() {
-        
-        let calculator = Calculator()
-        
-        let result = calculator.add(1, 2)
-        XCTAssertEqual(result, 3)
+
+        XCTAssertEqual(calculator.add(1, 2), 3)
     }
     
     func testSubstract() {
         
-        let calculator = Calculator()
-        
-        let result = calculator.substract(3, 1)
-        XCTAssertEqual(result, 2)
+        XCTAssertEqual(calculator.substract(3, 1), 2)
     }
     
     func testMultiple() {
         
-        let calculator = Calculator()
-        
-        let result = calculator.multiple(2, 3)
-        XCTAssertEqual(result, 6)
+        XCTAssertEqual(calculator.multiple(2, 3), 6)
     }
     
     func testDivision() {
         
-        let calculator = Calculator()
-        
-        let result = calculator.division(6, 2)
-        XCTAssertEqual(result, 3)
+        XCTAssertEqual(calculator.division(6, 2), 3)
     }
 }
